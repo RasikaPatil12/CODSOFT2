@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarohi Patil | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #a770ef, #cf8bf3, #fdb99b);
+      color: white;
+      padding: 2rem 1rem 3rem;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+    }
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 0.8rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .portfolio-section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #a770ef;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 1.2rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+    .card i {
+      font-size: 2.2rem;
+      color: #a770ef;
+      margin-bottom: 0.8rem;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 0.3rem;
+    }
+    .card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .contact-section {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 1rem;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-section h2 {
+      margin-bottom: 1rem;
+      color: #a770ef;
+    }
+    .contact-details {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.8;
+    }
+    .contact-details a {
+      color: #a770ef;
+      text-decoration: none;
+    }
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 3rem auto 1rem;
+      padding: 0.7rem 1.4rem;
+      background: linear-gradient(to right, #a770ef, #cf8bf3);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      opacity: 0.85;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #f0f0f0;
+      color: #777;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Profile.avif" alt="Aarohi Patil" class="profile-pic">
+  <h1>Aarohi Patil</h1>
+  <p>I'm a passionate Web Developer & UI/UX Designer, constantly exploring creative technologies and building user-friendly applications.</p>
+</header>
+
+<section class="portfolio-section">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Panic App</h3>
+      <p>A mobile emergency alert application that sends live location and SOS messages to predefined contacts.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-microphone"></i>
+      <h3>Voice-to-Text App</h3>
+      <p>Multilingual speech-to-text app with export support in PDF and Word formats.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-heartbeat"></i>
+      <h3>Organ Donation Site</h3>
+      <p>A responsive website to manage organ donation events and donor awareness campaigns.</p>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">
+      <i class="fab fa-html5"></i>
+      <h3>HTML5</h3>
+      <p>Semantic, SEO-friendly HTML structures with modern standards.</p>
+    </div>
+    <div class="card">
+      <i class="fab fa-css3-alt"></i>
+      <h3>CSS3</h3>
+      <p>Responsive layouts, animations, and modern UI styling.</p>
+    </div>
+    <div class="card">
+      <i class="fab fa-js-square"></i>
+      <h3>JavaScript</h3>
+      <p>Interactive frontend experiences with Vanilla JS and modern frameworks.</p>
+    </div>
+    <div class="card">
+      <i class="fab fa-react"></i>
+      <h3>React</h3>
+      <p>Building dynamic and component-based SPAs using React.</p>
+    </div>
+    <div class="card">
+      <i class="fab fa-figma"></i>
+      <h3>Figma</h3>
+      <p>Designing UI/UX prototypes and converting designs into functional interfaces.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+  <h2>Contact Information</h2>
+  <div class="contact-details">
+    <p><strong>Email:</strong> aarohipatil468@gmail.com</p>
+    <p><strong>Mobile:</strong> +91 98765 43210</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </div>
+</section>
+
+<div style="text-align: center;">
+  <a href="Landing Page.html" class="back-btn">← Back to Home</a>
+</div>
+
+<footer>
+  &copy; 2025 Aarohi Patil. All rights reserved.
+</footer>
+
+</body>
+</html>
